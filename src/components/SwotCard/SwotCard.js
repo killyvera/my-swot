@@ -1,4 +1,4 @@
-import * as Styled from '../styles';
+import * as Styled from './styles';
 
 export default function SwotCard(props){
     return(
