@@ -1,29 +1,6 @@
-import '../App.css';
 import styled from '@emotion/styled';
 
-export default function SwotCard(props){
-    return(
-        <CardWrapper>
-            <Circle>
-                <LogoWrapper>
-                <img src={props.icon} alt="SWOT Icon" />
-                </LogoWrapper>
-            </Circle>
-            <ContentWrapper>
-                <CounterCard>{props.counter}</CounterCard>
-                <FirstContent>{props.firstContent}</FirstContent>
-                <OtherContents>
-                    {props.otherContents.map((content, index)=><p key={index} >{content}</p>)}
-                </OtherContents>
-                <Separator />
-                <SwotTitle>{props.type}</SwotTitle>
-            </ContentWrapper>
-        </CardWrapper>
-
-    );
-};
-
-let CardWrapper = styled.div`
+export const CardWrapper = styled.div`
     position:relative;
     width: 200px;
     height: 360px;
@@ -34,7 +11,7 @@ let CardWrapper = styled.div`
     flex-direction: column;
     align-items: center;
 `
-let Circle = styled.div`
+export const Circle = styled.div`
     position:relative;
     width: 175px;
     height: 175px;
@@ -43,14 +20,14 @@ let Circle = styled.div`
     border-radius: 100px;
     margin-top: 12px;
 `
-let ContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
     position: absolute;
     width: 180px;
     height: 105px;
     left: 10px;
     top: 200px;
 `
-let CounterCard = styled.h1`
+export const CounterCard = styled.h1`
     position: absolute;
     width: 62px;
     height: 70px;
@@ -66,7 +43,7 @@ let CounterCard = styled.h1`
     color: #1F1F1F;
 `
 
-const FirstContent= styled.h1`
+export const FirstContent= styled.h1`
     position: absolute;
     width: 119px;
     height: 14px;
@@ -81,7 +58,7 @@ const FirstContent= styled.h1`
     text-align: left;
     color: #1F1F1F;
 `
-const OtherContents = styled.div`
+export const OtherContents = styled.div`
     text-align: left;
     position: absolute;
     width: 119px;
@@ -95,7 +72,7 @@ const OtherContents = styled.div`
     text-transform: uppercase;
     color: #1F1F1F;
 `
-let Separator= styled.div`
+export const Separator= styled.div`
     position: absolute;
     width: 180px;
     height: 2px;
@@ -105,7 +82,7 @@ let Separator= styled.div`
     border-radius: 2px;
 `
 
-let SwotTitle= styled.h1`
+export const SwotTitle= styled.h1`
     position: absolute;
     width: 148px;
     height: 29px;
@@ -123,7 +100,7 @@ let SwotTitle= styled.h1`
     text-transform: uppercase;
     color: #1F1F1F;
 `
-const LogoWrapper= styled.div`
+export const LogoWrapper= styled.div`
 position: absolute;
 top: 42px;
 left: 43px;
