@@ -11,6 +11,8 @@ export default function SwotCard(props){
                 <OtherContents>
                     {props.otherContents.map((content, index)=><p key={index} >{content}</p>)}
                 </OtherContents>
+                <Separator />
+                <SwotTitle>{props.type}</SwotTitle>
             </ContentWrapper>
         </CardWrapper>
 
@@ -85,6 +87,35 @@ const OtherContents = styled.div`
     font-style: normal;
     font-size: 8px;
     line-height: 0%;
+    text-transform: uppercase;
+    color: #1F1F1F;
+`
+let Separator= styled.div`
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    left: 0px;
+    top: 70px;
+    background: #1E1E1E;
+    border-radius: 2px;
+`
+
+let SwotTitle= styled.h1`
+    background: red;
+    position: absolute;
+    width: 148px;
+    height: 29px;
+    left: 16px;
+    top: 62px;
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     text-transform: uppercase;
     color: #1F1F1F;
 `
