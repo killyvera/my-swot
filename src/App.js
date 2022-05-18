@@ -1,8 +1,11 @@
 import SwotCard from './components/SwotCard'
 import './App.css';
 
+//src\components\SWOTCard\01_icon.svg
+
 const cardContent1 ={
   type:'Strengths',
+  icon:'icons/swot/01_icon.svg',
   counter:'01',
   firstContent: 'Tech Industry',
   otherContents:[
@@ -41,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <SwotCard
+      icon={cardContent1.icon}
       type={cardContent1.type}
       counter={cardContent1.counter}
       firstContent={cardContent1.firstContent}

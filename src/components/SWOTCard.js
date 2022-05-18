@@ -4,7 +4,11 @@ import styled from '@emotion/styled';
 export default function SwotCard(props){
     return(
         <CardWrapper>
-            <Circle />
+            <Circle>
+                <LogoWrapper>
+                <img src={props.icon} alt="SWOT Icon" />
+                </LogoWrapper>
+            </Circle>
             <ContentWrapper>
                 <CounterCard>{props.counter}</CounterCard>
                 <FirstContent>{props.firstContent}</FirstContent>
@@ -31,6 +35,7 @@ let CardWrapper = styled.div`
     align-items: center;
 `
 let Circle = styled.div`
+    position:relative;
     width: 175px;
     height: 175px;
     background: #434343;
@@ -101,7 +106,6 @@ let Separator= styled.div`
 `
 
 let SwotTitle= styled.h1`
-    background: red;
     position: absolute;
     width: 148px;
     height: 29px;
@@ -118,4 +122,12 @@ let SwotTitle= styled.h1`
     justify-content: center;
     text-transform: uppercase;
     color: #1F1F1F;
+`
+const LogoWrapper= styled.div`
+position: absolute;
+top: 42px;
+left: 43px;
+width: 90px;
+height: 90px;
+text-align: center;
 `
