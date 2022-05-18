@@ -4,13 +4,19 @@ import styled from '@emotion/styled';
 export default function SwotCard(props){
     return(
         <CardWrapper>
-            <Circle />
+            <Circle>
+                <LogoWrapper>
+                <img src={props.icon} alt="SWOT Icon" />
+                </LogoWrapper>
+            </Circle>
             <ContentWrapper>
                 <CounterCard>{props.counter}</CounterCard>
                 <FirstContent>{props.firstContent}</FirstContent>
                 <OtherContents>
                     {props.otherContents.map((content, index)=><p key={index} >{content}</p>)}
                 </OtherContents>
+                <Separator />
+                <SwotTitle>{props.type}</SwotTitle>
             </ContentWrapper>
         </CardWrapper>
 
@@ -29,6 +35,7 @@ let CardWrapper = styled.div`
     align-items: center;
 `
 let Circle = styled.div`
+    position:relative;
     width: 175px;
     height: 175px;
     background: #434343;
@@ -87,4 +94,40 @@ const OtherContents = styled.div`
     line-height: 0%;
     text-transform: uppercase;
     color: #1F1F1F;
+`
+let Separator= styled.div`
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    left: 0px;
+    top: 70px;
+    background: #1E1E1E;
+    border-radius: 2px;
+`
+
+let SwotTitle= styled.h1`
+    position: absolute;
+    width: 148px;
+    height: 29px;
+    left: 16px;
+    top: 62px;
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #1F1F1F;
+`
+const LogoWrapper= styled.div`
+position: absolute;
+top: 42px;
+left: 43px;
+width: 90px;
+height: 90px;
+text-align: center;
 `
