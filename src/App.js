@@ -1,10 +1,10 @@
-import SWOTCard from './components/SWOTCard'
+import SwotCard from './components/SwotCard'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SWOTCard />
+      <SwotCard />
 
     </div>
   );
