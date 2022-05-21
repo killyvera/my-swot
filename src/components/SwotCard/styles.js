@@ -27,44 +27,50 @@ export const ContentWrapper = styled.div`
     left: 10px;
     top: 200px;
 `
+// position: absolute actually makes the element harder to work with
+// better just rely on the power of display flex
+// position: absolute;
+//     width: 62px;
+//     height: 70px;
+//     left: 0px;
+//     bottom: -7px;
+
+// Flex would make more sense on a parent box
+// display: flex;
+//     align-items: center;
 export const CounterCard = styled.h1`
-    position: absolute;
-    width: 62px;
-    height: 70px;
-    left: 0px;
-    bottom: -7px;
+    margin: 0;
     font-family: 'Impact';
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
+    font-size: 60px;
     line-height: 70px;
-    display: flex;
-    align-items: center;
     color: #1F1F1F;
 `
 
-export const FirstContent= styled.h1`
-    position: absolute;
-    width: 119px;
-    height: 14px;
-    left: 62px;
-    bottom: 70px;
+// position: absolute;
+//     width: 119px;
+//     height: 14px;
+//     left: 62px;
+//     bottom: 70px;
+export const FirstContent = styled.h1`
+    margin: 0;
     font-family: 'Kodchasan';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 103.16%;
     text-transform: uppercase;
     text-align: left;
     color: #1F1F1F;
 `
+// position: absolute;
+// left: 62px;
+//     top: 27px;
 export const OtherContents = styled.div`
     text-align: left;
-    position: absolute;
     width: 119px;
     height: 37px;
-    left: 62px;
-    top: 27px;
     font-family: 'Kodchasan';
     font-style: normal;
     font-size: 8px;
@@ -72,7 +78,7 @@ export const OtherContents = styled.div`
     text-transform: uppercase;
     color: #1F1F1F;
 `
-export const Separator= styled.div`
+export const Separator = styled.div`
     position: absolute;
     width: 180px;
     height: 2px;
@@ -82,7 +88,7 @@ export const Separator= styled.div`
     border-radius: 2px;
 `
 
-export const SwotTitle= styled.h1`
+export const SwotTitle = styled.h1`
     position: absolute;
     width: 148px;
     height: 29px;
@@ -100,7 +106,7 @@ export const SwotTitle= styled.h1`
     text-transform: uppercase;
     color: #1F1F1F;
 `
-export const LogoWrapper= styled.div`
+export const LogoWrapper = styled.div`
 position: absolute;
 top: 42px;
 left: 43px;
