@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400&display=swap');
 
 body{
   background-color: #1a1a1a;
-  zoom: 1.25;
 }
-.App {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+
 

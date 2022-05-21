@@ -1,58 +1,59 @@
 import SwotCard from './components/SwotCard'
 import './App.css';
-
-//src\components\SWOTCard\01_icon.svg
-
-const cardContent1 ={
-  type:'Strengths',
-  icon:'icons/swot/01_icon.svg',
-  counter:'01',
-  firstContent: 'Tech Industry',
-  otherContents:[
-    'Communicative',
-    'Creative',
-    'Good Mate',
-    'Innovative'
-  ],
-};
-
-const cardContent2 ={
-  type:'Weaknesses',
-  counter:'02',
-  firstContent: 'Newbie Dev',
-  otherContents:[
-    'No Work Experience',
-    'I Still Need Direction',
-    'Too Detailed',
-    'Basic Math'
-  ],
-};
-
-const cardContent3 ={
-  type:'Oportunities',
-  counter:'03',
-  firstContent: 'Tech Industry',
-  otherContents:[
-    'Full Stack Developer',
-    'Fit In Front End Teams',
-    'Fit In Back End Teams',
-    'Art & Design Habilities'
-  ],
-};
+import * as Content from './components/SwotCard/ContentCards';
+import styled from '@emotion/styled';
 
 function App() {
   return (
-    <div className="App">
-      <SwotCard
-      icon={cardContent1.icon}
-      type={cardContent1.type}
-      counter={cardContent1.counter}
-      firstContent={cardContent1.firstContent}
-      otherContents={cardContent1.otherContents}
-      />
+    <Wrapper>
+      <CardContainer>
+        <SwotCard
+          icon={Content.card1.icon}
+          type={Content.card1.type}
+          counter={Content.card1.counter}
+          firstContent={Content.card1.firstContent}
+          otherContents={Content.card1.otherContents}
+        />
 
-    </div>
+        <SwotCard
+          icon={Content.card2.icon}
+          type={Content.card2.type}
+          counter={Content.card2.counter}
+          firstContent={Content.card2.firstContent}
+          otherContents={Content.card2.otherContents}
+        />
+
+        <SwotCard
+          icon={Content.card3.icon}
+          type={Content.card3.type}
+          counter={Content.card3.counter}
+          firstContent={Content.card3.firstContent}
+          otherContents={Content.card3.otherContents}
+        />
+
+        <SwotCard
+          icon={Content.card4.icon}
+          type={Content.card4.type}
+          counter={Content.card4.counter}
+          firstContent={Content.card4.firstContent}
+          otherContents={Content.card4.otherContents}
+        />
+        </CardContainer>
+    </Wrapper>
   );
 }
 
 export default App;
+
+export const Wrapper= styled.div`
+zoom: 1.2;
+position: fixed;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+`
+export const CardContainer = styled.div`
+display: flex;
+gap: 46px;
+`

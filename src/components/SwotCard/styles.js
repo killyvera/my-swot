@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const CardWrapper = styled.div`
-    position:relative;
     width: 200px;
     height: 360px;
     background: linear-gradient(178.19deg, #FFBB00 45.24%, #FF8F00 103.56%);
@@ -12,7 +11,7 @@ export const CardWrapper = styled.div`
     align-items: center;
 `
 export const Circle = styled.div`
-    position:relative;
+    position:absolute;
     width: 175px;
     height: 175px;
     background: #434343;
@@ -21,11 +20,11 @@ export const Circle = styled.div`
     margin-top: 12px;
 `
 export const ContentWrapper = styled.div`
-    position: absolute;
+    position: relative;
     width: 180px;
     height: 105px;
-    left: 10px;
-    top: 200px;
+    left: 0px;
+    top: 210px;
 `
 export const CounterCard = styled.h1`
     position: absolute;
@@ -35,7 +34,7 @@ export const CounterCard = styled.h1`
     bottom: -7px;
     font-family: 'Impact';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 58px;
     line-height: 70px;
     display: flex;
@@ -45,14 +44,14 @@ export const CounterCard = styled.h1`
 
 export const FirstContent= styled.h1`
     position: absolute;
-    width: 119px;
+    width: 120px;
     height: 14px;
     left: 62px;
     bottom: 70px;
     font-family: 'Kodchasan';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 103.16%;
     text-transform: uppercase;
     text-align: left;
@@ -66,7 +65,7 @@ export const OtherContents = styled.div`
     left: 62px;
     top: 27px;
     font-family: 'Kodchasan';
-    font-style: normal;
+    font-weight: 700;
     font-size: 8px;
     line-height: 0%;
     text-transform: uppercase;
