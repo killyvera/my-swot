@@ -1,2 +1,2 @@
-import SwotCard from "../SwotCard/SwotCard";
+import SwotCard from "./SwotCard";
 export default SwotCard;
