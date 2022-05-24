@@ -46,7 +46,7 @@ export const card4 ={
     otherContents:[
       'Few Junior Positions',
       'Advance English Needed',
-      'Bad Leadershio',
+      'Bad Leadership',
       'Presencial Positions'
     ],
 };

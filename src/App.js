@@ -2,11 +2,13 @@ import SwotCard from './components/SwotCard'
 import './App.css';
 import * as Content from './components/SwotCard/ContentCards';
 import styled from '@emotion/styled';
+import { Header } from './components/textComponents';
 
 function App() {
   return (
     <Wrapper>
-      <CardContainer>
+      <Header title= 'Personal Swot Analysis' />
+      <CardsContainer>
         <SwotCard
           icon={Content.card1.icon}
           type={Content.card1.type}
@@ -38,7 +40,7 @@ function App() {
           firstContent={Content.card4.firstContent}
           otherContents={Content.card4.otherContents}
         />
-        </CardContainer>
+        </CardsContainer>
     </Wrapper>
   );
 }
@@ -53,7 +55,7 @@ left: 50%;
 -webkit-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 `
-export const CardContainer = styled.div`
+export const CardsContainer = styled.div`
 display: flex;
 gap: 46px;
 `
